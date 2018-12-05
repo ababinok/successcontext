@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <CheckedTextView
+        android:id="@+id/package_title"
+        android:layout_width="match_parent"
+        android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        tools:text="Название пакета" />
+
+    <TextView
+        android:id="@+id/package_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        tools:text="Краткое описание пакета" />
+
+</LinearLayout>
