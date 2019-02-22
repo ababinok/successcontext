@@ -7,7 +7,7 @@
     android:padding="16dp">
 
     <CheckedTextView
-        android:id="@+id/package_title"
+        android:id="@+id/title_ctv"
         android:layout_width="match_parent"
         android:checkMark="?android:attr/listChoiceIndicatorMultiple"
         android:layout_height="wrap_content"
@@ -16,7 +16,7 @@
         tools:text="Название пакета" />
 
     <TextView
-        android:id="@+id/package_description"
+        android:id="@+id/description_tv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"

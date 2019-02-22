@@ -32,8 +32,8 @@ public class ContextPackageAdapter extends ArrayAdapter<ContextPackage> {
 
         ContextPackage currentContextPackage = getItem(position);
 
-        CheckedTextView titleTV = listItemView.findViewById(R.id.package_title);
-        TextView descriptionTV = listItemView.findViewById(R.id.package_description);
+        CheckedTextView titleTV = listItemView.findViewById(R.id.title_ctv);
+        TextView descriptionTV = listItemView.findViewById(R.id.description_tv);
 
         titleTV.setText(currentContextPackage != null ? currentContextPackage.getTitle() : "");
         descriptionTV.setText(currentContextPackage != null ? currentContextPackage.getDescription() : "");
