@@ -10,13 +10,13 @@ import android.widget.CheckedTextView;
 import android.widget.TextView;
 
 import com.ofnicon.successcontext.R;
-import com.ofnicon.successcontext.objects.ContextPackage;
+import com.ofnicon.successcontext.objects.NoticePackage;
 
 import java.util.ArrayList;
 
-public class ContextPackageAdapter extends ArrayAdapter<ContextPackage> {
+public class NoticePackageAdapter extends ArrayAdapter<NoticePackage> {
 
-    public ContextPackageAdapter(Context context, ArrayList<ContextPackage> objects) {
+    public NoticePackageAdapter(Context context, ArrayList<NoticePackage> objects) {
         super(context, 0, objects);
     }
 
@@ -30,14 +30,14 @@ public class ContextPackageAdapter extends ArrayAdapter<ContextPackage> {
                     R.layout.package_item, parent, false);
         }
 
-        ContextPackage currentContextPackage = getItem(position);
+        NoticePackage currentNoticePackage = getItem(position);
 
         CheckedTextView titleTV = listItemView.findViewById(R.id.title_ctv);
         TextView descriptionTV = listItemView.findViewById(R.id.description_tv);
 
-        titleTV.setText(currentContextPackage != null ? currentContextPackage.getTitle() : "");
-        descriptionTV.setText(currentContextPackage != null ? currentContextPackage.getDescription() : "");
-        titleTV.setChecked(currentContextPackage != null && currentContextPackage.isChecked());
+        titleTV.setText(currentNoticePackage != null ? currentNoticePackage.getTitle() : "");
+        descriptionTV.setText(currentNoticePackage != null ? currentNoticePackage.getDescription() : "");
+        titleTV.setChecked(currentNoticePackage != null && currentNoticePackage.isChecked());
 
         return listItemView;
 

@@ -1,6 +1,6 @@
 package com.ofnicon.successcontext.objects;
 
-public class ContextPackage {
+public class NoticePackage {
 
     private String title;
     private String description;
@@ -18,7 +18,7 @@ public class ContextPackage {
         return checked;
     }
 
-    public ContextPackage(String title, String description, boolean checked) {
+    public NoticePackage(String title, String description, boolean checked) {
         this.title = title;
         this.description = description;
         this.checked = checked;
